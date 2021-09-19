@@ -1,0 +1,123 @@
+.wrap-container {
+  background: rgb(239, 239, 239);
+  background: radial-gradient(
+    circle,
+    rgba(239, 239, 239, 1) 0%,
+    rgba(229, 229, 229, 1) 100%
+  );
+}
+
+.header-contact {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  font-family: $font-logo;
+  font-style: normal;
+  font-size: 34px;
+  color: $color2;
+  padding: 0;
+}
+
+.form-wrapper {
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+}
+
+.form-col-left {
+  background-color: $color4;
+  padding: 20px;
+  max-width: 40vw;
+  max-width: 555px;
+  margin-right: 50px;
+
+  input {
+    padding: 16px;
+  }
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+
+  &-input {
+    background-color: $color2;
+    border: none;
+    margin-right: 10px;
+  }
+
+  &-input:checked {
+    background-color: transparent;
+  }
+
+  &-label {
+    color: $color5;
+  }
+}
+
+.form-control {
+  border: none;
+}
+
+.form-label {
+  color: $color5;
+  font-size: 20px;
+}
+
+.input-group-text {
+  color: $color3;
+  background-color: $color7;
+  border: none;
+}
+
+.btn-contact {
+  background-color: $color5;
+  width: 100%;
+  font-size: 22px;
+  border: none;
+  &:hover {
+    background-color: $color4;
+    color: $color5
+  }
+}
+
+.list-group-item {
+  padding: 0 33px;
+}
+
+.list-group-item {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 2vh;
+}
+
+.contact-info {
+  color: $color5;
+}
+
+.icon {
+  color: $color5;
+  font-size: 6vh;
+  max-width: 2vw;
+  margin-right: 3vw;
+  margin-right: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+  .form-col-right {
+    margin-top: 90px;
+    width: 90%;
+    padding: 0;
+  }
+
+  .list-group-item {
+    padding: 0;
+    width: 312px;
+  }
+
+  .form-wrapper {
+    height: 1450px;
+  }
+}

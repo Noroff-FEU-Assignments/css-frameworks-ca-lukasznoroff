@@ -1,0 +1,89 @@
+.header-news {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  color: $color2;
+  font-size: 36px;
+  font-family: $font-logo;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.center-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-img-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.shadow {
+  border-radius: 15px;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.pagination-btns-bottom {
+  height: 25vh;
+}
+
+.page-item:is(:first-child) .page-link {
+  background-color: $color2;
+  color: $color3;
+  border: 1px solid $color2;
+}
+
+.page-link {
+  border: 1px solid $color2;
+  color: $color2;
+  &:hover {
+    background-color: $color2;
+    color: $color3;
+  }
+}
+
+.btn-card-cta {
+  background-color: $color2;
+  border: none;
+  position: relative;
+  border-radius: 5px;
+  font-size: 18px;
+  &:hover {
+    background-color: $color3;
+    color: $color2;
+  }
+}
+
+.btn-card-cta:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 12%;
+  background-color: $color5;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 1s;
+}
+
+.btn-card-cta:hover::after {
+  transform: translateX(width);
+  width: 100%;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .header-news {
+   width: 90%;
+   margin: 70px auto 0;
+}
+  .pagination {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
